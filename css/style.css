@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game {
+    width: 100%;
+    height: 100vh;
+    border-bottom: 120px solid #865811;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF);
+}
+
+.cerca-madeira {
+    position: absolute;
+    bottom: 0;
+    width: 250px;
+    animation: cerca-animation 2s infinite linear;
+}
+
+.porco-pulando {
+    width: 120px;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump-porco {
+    animation: porco-animation 500ms ease-out;
+
+}
+
+.cloud-game {
+    width: 550px;
+    position: absolute;
+    animation: clouds-animation 15s infinite linear;
+}
+
+@keyframes cerca-animation {
+    from{
+        right: -100px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes clouds-animation {
+    from{
+        right: -550px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes porco-animation {
+    0% {
+        bottom: 0%;
+    }
+    40% {
+        bottom: 180px;
+    }
+    50% {
+        bottom: 180px;
+    }
+    60% {
+        bottom: 180px;
+    }
+    70% {
+        bottom: 180px;
+    }
+    100% {
+        bottom: 0%;
+    }
+}
